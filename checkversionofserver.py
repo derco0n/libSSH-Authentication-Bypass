@@ -2,7 +2,7 @@ import socket, argparse
 from sys import exit
 
 parser = argparse.ArgumentParser(description="libSSH Authentication Bypass Server Version Check")
-parser.add_argument('--host', help='Host')
+parser.add_argument('--host', help='Host', default="192.168.1.10")
 parser.add_argument('-p', '--port', help='libSSH port', default=22)
 
 args = parser.parse_args()
